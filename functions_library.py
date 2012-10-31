@@ -9,18 +9,44 @@ from numpy import *
 from random import gauss
 from numpy.linalg import *
 from pylab import *
+"""
+Matrices and arrays in python
 
+Everywhere in the work we have tezors of 2nd order(matrices), so we use 2d
+array for them. Even if we have vector, we use 2d array in order to have
+the same dimensions for any variable.
+
+We initialize them: a = array([[]])
+When we want to add something to this array, we can choose, where to add:
+from the right side or below. So, we add element in to ways:
+a = append(a, data, axis = 1) -- from the right
+a = append(a, data, 0) -- below
+"""
 #--------------------------------------------------------------------------------
 # Generate signal
 #--------------------------------------------------------------------------------
+"""
+Here y = Dx + n
+
+y is number, x is column 2x1, D is vector 1x2, n is number
+
+y = a1*cos(z) + a2*sin(z) + a/hbar * (signal + back action)
+signal = F/(m*w)*sin(w*(t-tau)) = A_c*sin(w*t) - A_s*cos(w*t)
+back action = a*integral_0^t(G(t'-t)*a1(t'))
+"""
 
 def y(i, z, a1, a2, A_c, A_s, F, stage):
     return dot(D(i,z,tau,stage),x(A_c,A_s,F,stage))+noise(i,z,a1,a2)
 
-
 #--------------------------------------------------------------------------------
 # Define main functions
 #--------------------------------------------------------------------------------
+"""
+NB!
+
+Here and everywhere: stage 1 is stage with estimation the arrival time,
+stage 2 is sage with prediction the homodyne angle
+"""
 
 def D(i,z,tauEst,stage): # define measurement matrix
     if stage == 1:
