@@ -225,7 +225,7 @@ def innovation_zeta(z,i,est_tau,Estimator,Estimator_old):
     if procedure == 3: #adaptive
         z = append(z, [z[i-1]+ adaptive(Estimator[0],Estimator[1],Estimator_old[0],Estimator_old[1])])
     
-def printout():
+def printout(est_F,est_tau,estimation_F,estimation_tau,z):
     print est_F, 'estimation F', F, 'F'
     print est_tau, 'estimation tau', tau, 'tau'
     figure(0)
@@ -239,7 +239,18 @@ def printout():
     title(u'Homodyne angle')
     show()
     
-    
+def mean_value(statistics_F,statistics_tau):
+    F_mean = 0
+    tau_mean = 0
+    for i in xrange(0,cycles):
+        F_mean += statistics_F[i]**2
+        tau_mean += statistics_tau[i]**2
+    F_mean = F_mean/cycles
+    tau_mean = tau_mean/cycles
+    error_F = F_mean-F**2
+    error_tau = tau_mean-tau**2
+    print error_F, 'variation F'
+    print error_tau, 'variation tau'
     
     
     
