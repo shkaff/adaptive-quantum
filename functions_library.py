@@ -226,7 +226,18 @@ def innovation_zeta(z,i,est_tau,Estimator,Estimator_old):
         z = append(z, [z[i-1]+ adaptive(Estimator[0],Estimator[1],Estimator_old[0],Estimator_old[1])])
     
 def printout():
-    
+    print est_F, 'estimation F', F, 'F'
+    print est_tau, 'estimation tau', tau, 'tau'
+    figure(0)
+    plot(estimation_F)
+    title(u'Estimation F')
+    figure(1)
+    plot(estimation_tau)
+    title(u'Estimation tau')
+    figure(2)
+    plot(z)
+    title(u'Homodyne angle')
+    show()
     
     
     
