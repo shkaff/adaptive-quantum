@@ -179,6 +179,23 @@ def estimation_LMMSE(invY,xy,y,stage):
         return 1/w*arctan(Estimator[1]/Estimator[0]), 1/(m*w)*sqrt(Estimator[1]**2+Estimator[0]**2), Estimator
     else:
         return arctan(K[0][-3]/K[0][-4])
+        
+
+#--------------------------------------------------------------------------------
+# Define innovation of homodyne angle
+#--------------------------------------------------------------------------------
+def variational(i,tau,T):
+    zeta_constants = (4*w**2*m*hbar)/a**2
+    zeta_numenator = sin(w*(dt*i-tau))
+    zeta_denumenator = 2*w*(dt*i-T)*cos(w*(dt*i-tau)) - sin(w*(dt*i-tau))-sin(w*(dt*i-2*T+tau))
+    return arctan(zeta_constants*zeta_numenator/zeta_denumenator)
+    
+def adaptive(Ac, As, Ac_old, As_old):
+    innovation_value = innovation_constant*dt*(Ac*Ac_old+As*As_old - Ac_old**2 - As_old**2)
+    return innovation_value
+    
+#def filtering():
+    
 #--------------------------------------------------------------------------------
 # Define estimation procedure
 #--------------------------------------------------------------------------------
@@ -197,5 +214,40 @@ def back_action():
     a2 = a2.T
     BA=dot(dot(GG,a1),dt)
     return BA, a1, a2
-
-def innovation_zeta(z,)
+    
+def innovation_zeta(z,i,est_tau,Estimator,Estimator_old):
+    if procedure == 0: # no change
+        z = append(z, [1.0])   
+    if procedure == 1: # variation
+        z = append(z, [variation(dt*(i+1),est_tau,dt*N)])
+    if procedure == 2: # filtering
+        z = 0
+    if procedure == 3: #adaptive
+        z = append(z, [z[i-1]+ adaptive(Estimator[0],Estimator[1],Estimator_old[0],Estimator_old[1])])
+    
+def printout():
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
