@@ -165,9 +165,37 @@ def invert_matrix(i,z,old):
 def estimation_BLUE(invN,D,y,stage):
     transD = transpose(D)
     K = dot(dot(inv(dot(transD,dot(invN,D))),transD),invN) # filter
-    Estimator = dot(K,y)
+    
     if stage == 1:
-        return 1/w*arctan(Estimator[1]/Estimator[0]), 1/(m*w)*sqrt(Estimator[1]**2+Estimator[0]**2)
+        Estimator = dot(K,y)
+        return 1/w*arctan(Estimator[1]/Estimator[0]), 1/(m*w)*sqrt(Estimator[1]**2+Estimator[0]**2), Estimator
     else:
         return arctan(K[0][-3]/K[0][-4]) # Here  K[-3] means that we take the element 3d from the end. K[-4] - 4th from the end.
 
+def estimation_LMMSE(invY,xy,y,stage):
+    K = dot(xy,invY)
+    if stage == 1:
+        Estimator = dot(K,y)
+        return 1/w*arctan(Estimator[1]/Estimator[0]), 1/(m*w)*sqrt(Estimator[1]**2+Estimator[0]**2), Estimator
+    else:
+        return arctan(K[0][-3]/K[0][-4])
+#--------------------------------------------------------------------------------
+# Define estimation procedure
+#--------------------------------------------------------------------------------
+def back_action():
+    
+    GG = zeros((N,N)) #back-action matrix
+    for i in xrange(0,N):
+        a1 = append(a1,[[gauss(0,sqrt(1.0/(2.0*dt)))]],1) # we use append(initial array, [[number]], axis)
+        a2 = append(a2,[[gauss(0,sqrt(1.0/(2.0*dt)))]],1)
+        for j in xrange(0,i+1):
+            if i>j:
+                GG[i][j] = G(dt*(i-j))
+            else:
+                GG[i][j] = 0.0   
+    a1 = a1.T
+    a2 = a2.T
+    BA=dot(dot(GG,a1),dt)
+    return BA, a1, a2
+
+def innovation_zeta(z,)
