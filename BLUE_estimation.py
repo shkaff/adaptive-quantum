@@ -39,8 +39,15 @@ cycles = 1
 
 estimation_F = []
 estimation_tau = []
-
+statistics_F = []
+statistics_tau = []
 procedure = 1 # we use variation method for innovation procedure
+
+#################################################################################
+#-------------------------------------------------------------------------------#
+# Main cycle                                                                    #
+#-------------------------------------------------------------------------------#
+#################################################################################
 
 for k in xrange(0, cycles):
     
@@ -77,3 +84,14 @@ for k in xrange(0, cycles):
             
             estimation_F = append(estimation_F,est_F)
             estimation_tau = append(estimation_tau,est_tau)
+    statistics_F = append(statistics_F, est_F)
+    statistics_tau = append(statistics_tau, est_tau)
+    
+#--------------------------------------------------------------------------------
+# Print result
+#--------------------------------------------------------------------------------
+
+if cycles == 1:
+    printout(est_F,est_tau,estimation_F,estimation_tau,z)
+else:
+    mean_value(statistics_F,statistics_tau)
