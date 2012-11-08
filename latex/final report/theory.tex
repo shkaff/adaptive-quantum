@@ -1,4 +1,16 @@
-\section{Adaptive filtering: theory}\label{sec:th}
+\section{Adaptive measurement theory}\label{sec:th}
+\subsection{Conception}
+The majority of experiments obey the following principal scheme: the ``black box'' (our system) produces some output and we try to find parameters of this system using just this signal (see Fig.\ref{pic:stfilt}). There are two contributions to it: dynamic processes in our system and noises acting on it. 
+All the information about values we want to know contains in the signal part of the output and noises only disturb us - obviously, we wish to get rid
+of the them. This task can be solved by means of filtering theory: we estimate desired parameters from noisy signal, applying so-called filtering 
+operator to the output. The choice of this estimation procedure depends on the particular problem, but the conception stays mostly the same - we choose
+it to satisfy some criteria, such as minimal mean square error.
+
+Adaptive measurements in general and adaptive filtering in particular involve using this filtering approach\cite{Wiseman2011a,Ahn2008}. The simple adaptive procedure is:
+measurement - estimation the parameters - adjust measurement device - new measurement. Many researches apply this idea in classical experiments, but 
+is quantum physics there are only few research groups working on this task\cite{Wiseman1997,Braginsky1993}. Wiseman and colleagues in made significant contribution to the adaptive filtering and
+control theory \cite{Berry2008,Berry2001,Berry2002,Measurements1995m}. By the moment there are a few works on adaptive research in GW detectors \cite{Hentschel2010,Dhurandhar2008}.
+
 \subsection{System}
 
 \begin{figure}
@@ -24,7 +36,7 @@ So, for the ingoing optical fields $\hat{a}_{1,2}$ and outgoing $\hat{b}_{1,2}$ 
 \end{cases}
 \end{equation}
 
-Here we introduced ingoing and outgoing optical fiels. In the paraxial and narrowband approximation they are related with strength of electrical field as:
+Here we introduced ingoing and outgoing optical fields. In the paraxial and narrowband approximation they are related with strength of electrical field as:
 \begin{equation}
  \hat{E}(t) = \sqrt{\frac{4\pi \hbar\omega_0}{\mathcal{S} c}} \bigl[\bigl(\bar{a}+\hat{a}_1(t)\bigr)\cos\omega_0t + \hat{a}_2(t)\sin\omega_0t\bigr],
 \end{equation}
