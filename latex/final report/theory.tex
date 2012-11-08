@@ -91,7 +91,7 @@ So, we can rewrite the output as:
 \begin{equation}\label{gen_y}
  \hat{y}(t) = \hat{b}_1(t)\cos \zeta(t) +  \hat{b}_2(t) \sin \zeta(t),
 \end{equation}
-and our main task would be search of the optimal homodyne angle $\zeta(t)$ for any moment of time. We can do this using adaptive measurements.
+and our main task is search of the optimal homodyne angle $\zeta(t)$ for any moment of time. We can do this using adaptive measurements.
 
 \subsection{Adaptive measurements: general approach}
 In our work we consider simple case of impulse force with unknown amplitude $\bar{F}$, acting on the system at unknown time $\tau$: 
@@ -114,6 +114,8 @@ where:
 & A_s = \frac{\bar{F}}{m\omega_m}\sin\omega_m\tau\,\Theta(t-t'),\\
 & I(t) = \frac{\alpha}{\hbar}(\hat{x}(0) \cos \omega_m t+ \frac{\hat{p}(0)}{m \omega_m} \sin \omega_m t).
 \end{align}
+In furter calculations we do not take into account initial state $\hat{x}(0),\hat{p}(0)$ for simplicity.
+
 The important thing is, that, how it is shown in Appendix \ref{Appendix 1}, if estimation for two quadratures $A_{c,s}$ is optimal then we can do any mapping to get desired value of force and arrival time and this optimality conserves.
 That is why we are solving not non-linear task, described by Eq.\ref{init_y}, but linear one, described by Eq.\ref{init_A}. 
 \begin{figure}[t]
@@ -286,12 +288,12 @@ Suppose, that we can make prediction about both quadratures $b_{1,2}$. Then:
 \begin{equation}
  \begin{cases}\label{b1b2}
   \hat{b}_1(t) = \hat{a}_1(t) \\
-  \hat{b}_2(t) = \hat{a}_2(t)+ I(t) + \frac{\alpha^2}{\hbar}\int\limits_0^{\infty} dt' \, G(t-t') \,\Theta(t-t') \hat{a}(t') + \frac{\alpha}{\hbar}x_0 \sin \omega_m (t-\tilde{\tau})
+  \hat{b}_2(t) = \hat{a}_2(t) + \frac{\alpha^2}{\hbar}\int\limits_0^{\infty} dt' \, G(t-t') \,\Theta(t-t') \hat{a}(t') + \frac{\alpha}{\hbar}x_0 \sin \omega_m (t-\tilde{\tau})
  \end{cases}
 \end{equation}
 In back-action term we can use sum instead of the integral. So we can write this integral as product of two vectors:
-\begin{equation}
- \I{0}{t}d\tau\, G(t-\tau)a_1(\tau) = \lim\limits_{dt\rightarrow0}\sum\limits_{i=1}^NG(t-t_i) a_1(t_i) dt = \lim\limits_{dt\rightarrow0} 
+\begin{multline}
+ \I{0}{t}d\tau\, G(t-\tau)a_1(\tau) = \lim\limits_{dt\rightarrow0}\sum\limits_{i=1}^NG(t-t_i) a_1(t_i) dt = \\ =\lim\limits_{dt\rightarrow0} 
 \begin{bmatrix}
  G(t-t_1), & G(t-t_2), & \hdots, & G(t-t_N)
 \end{bmatrix}
@@ -299,8 +301,9 @@ In back-action term we can use sum instead of the integral. So we can write this
  a_1(t_1)\\a_1(t_2)\\\vdots\\a_2(t_N)
 \end{bmatrix}
 dt
-\end{equation}
-where $t_i = i\,dt, t_N = t$
+\end{multline}
+where $t_i = i\,dt, t_N = t$.
+
 For any moment of time $t$ we can compute back-action matrix as:
 \begin{equation}
  \begin{bmatrix}
@@ -329,7 +332,7 @@ Here we can use the same filtering approach, but now for two quadratures:
 \begin{bmatrix}
  0 \\ \frac{\alpha}{\hbar} \sin \omega_m(t+dt)
 \end{bmatrix}
-x_0 + I(t)+
+x_0 + 
 \begin{bmatrix}
  \hat{n}_1(t+dt) \\ \hat{n}_2(t+dt)
 \end{bmatrix}
