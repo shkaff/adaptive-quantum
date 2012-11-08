@@ -1,5 +1,13 @@
 \section{Adaptive measurement theory}\label{sec:th}
 \subsection{Conception}
+\begin{figure}
+\vspace{-5ex}
+
+\includegraphics[width=1\linewidth]{meas_dia.pdf}
+\caption{Classical filtering problem}
+\label{pic:stfilt}
+\end{figure}
+
 The majority of experiments obey the following principal scheme: the ``black box'' (our system) produces some output and we try to find parameters of this system using just this signal (see Fig.\ref{pic:stfilt}). There are two contributions to it: dynamic processes in our system and noises acting on it. 
 All the information about values we want to know contains in the signal part of the output and noises only disturb us - obviously, we wish to get rid
 of the them. This task can be solved by means of filtering theory: we estimate desired parameters from noisy signal, applying so-called filtering 
@@ -11,15 +19,23 @@ measurement - estimation the parameters - adjust measurement device - new measur
 is quantum physics there are only few research groups working on this task\cite{Wiseman1997,Braginsky1993}. Wiseman and colleagues in made significant contribution to the adaptive filtering and
 control theory \cite{Berry2008,Berry2001,Berry2002,Measurements1995m}. By the moment there are a few works on adaptive research in GW detectors \cite{Hentschel2010,Dhurandhar2008}.
 
+In this research we want to apply the same approach to the optomechanical system.
 \subsection{System}
-
 \begin{figure}
-\center{\includegraphics[width=0.5\textwidth]{adaptive_scheme}}
+\begin{minipage}[b]{0.6\linewidth}
+\center{\includegraphics[width=1.0\textwidth]{adaptive_scheme}}
 \caption{Optomechanical system}
-\label{scheme}
+\label{pic:scheme}
+\end{minipage}
+\hspace{0.05\linewidth}
+\begin{minipage}[b]{0.3\linewidth}
+ \includegraphics[width=1.0\textwidth]{system}
+ \caption{Model of the system}
+ \label{pic:sys}
+\end{minipage}
 \end{figure}
 
-We consider simple optomechanical system of oscillator and homodyne detector (see Fig.\ref{scheme})\\
+We consider simple optomechanical system of oscillator and homodyne detector (see Fig.\ref{pic:scheme})\\
 The oscillator can be described with following equation of motion:
 \begin{equation}
 \begin{cases}
@@ -122,7 +138,7 @@ We use estimated arrival time to proceed back-action evading measurements. First
 This procedure: prediction of quadratures, filtering and calculating the homodyne angle for the next step we do ``in our minds'' and we assume that it takes no time to do this, so it's like some virtual process (see Fig. \ref{pic:adaptive_virtual} )
 \end{enumerate}
 \begin{figure}
- \center{\includegraphics[width=0.9\textwidth]{process_sceme}}
+\center{\includegraphics[width=0.9\textwidth]{process_sceme}}
 \caption{Scheme for understanding the second stage.}
 \label{pic:adaptive_virtual}
 \end{figure}
