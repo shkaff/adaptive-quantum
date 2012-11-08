@@ -1,0 +1,865 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.5.31)  8 NOV 2012 11:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**fin_0.1.tex
+(./fin_0.1.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, bu
+lgarian, ukrainian, russian, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ligodoc.cls
+Document Class: ligodoc 2006/07/17 LIGO document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks15
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen114
+\Hy@linkcounter=\count100
+\Hy@pagecounter=\count101
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count102
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 3941.
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count103
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count104
+\Field@Width=\dimen115
+\Fld@charsize=\dimen116
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring ON on input line 5791.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count105
+\c@Item=\count106
+\c@Hfootnote=\count107
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+\Fld@listcount=\count108
+\c@bookmark@seq@number=\count109
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen117
+\extrarowheight=\dimen118
+\NC@list=\toks20
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count110
+\calc@Bcount=\count111
+\calc@Adimen=\dimen119
+\calc@Bdimen=\dimen120
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count112
+\calc@Cskip=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/vmargin/vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen121
+\PaperHeight=\dimen122
+)
+\GPT@outputbox=\box28
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count113
+\LTcapwidth=\dimen123
+\LT@head=\box29
+\LT@firsthead=\box30
+\LT@foot=\box31
+\LT@lastfoot=\box32
+\LT@cols=\count114
+\LT@rows=\count115
+\c@LT@tables=\count116
+\c@LT@chunks=\count117
+\LT@p@ftn=\toks21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count118
+\rotFPtop=\skip56
+\rotFPbot=\skip57
+\rot@float@box=\box33
+\rot@mess@toks=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip58
+\f@ncyO@elh=\skip59
+\f@ncyO@erh=\skip60
+\f@ncyO@olh=\skip61
+\f@ncyO@orh=\skip62
+\f@ncyO@elf=\skip63
+\f@ncyO@erf=\skip64
+\f@ncyO@olf=\skip65
+\f@ncyO@orf=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip67
+\subfigcapskip=\skip68
+\subfigcaptopadj=\dimen124
+\subfigbottomskip=\skip69
+\subfigcapmargin=\dimen125
+\subfiglabelskip=\skip70
+\c@subfigure=\count119
+\c@lofdepth=\count120
+\c@subtable=\count121
+\c@lotdepth=\count122
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip71
+\subfig@bottom=\skip72
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 1994/05/23 v2.03 Table rule package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen126
+\WF@size=\dimen127
+\c@WF@wrappedlines=\count123
+\WF@box=\box34
+\WF@everypar=\toks23
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count124
+\output=\toks24
+\linenoprevgraf=\count125
+\linenumbersep=\dimen128
+\linenumberwidth=\dimen129
+\c@linenumber=\count126
+\c@pagewiselinenumber=\count127
+\c@LN@truepage=\count128
+\c@internallinenumber=\count129
+\c@internallinenumbers=\count130
+\quotelinenumbersep=\dimen130
+\bframerule=\dimen131
+\bframesep=\dimen132
+\bframebox=\box35
+LaTeX Info: Redefining \\ on input line 3056.
+) (./fin_0.1.aux
+(./introduction.aux) (./conception.aux) (./theory.aux) (./results.aux)
+(./conversation.aux) (./appendix.aux
+
+LaTeX Warning: Label `appx:constraint' multiply defined.
+
+))
+\openout1 = `fin_0.1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count131
+\scratchdimen=\dimen133
+\scratchbox=\box36
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen134
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box37
+Package hyperref Info: Link coloring ON on input line 39.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count137
+)
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
+
+(./fin_0.1.out) (./fin_0.1.out)
+\@outlinefile=\write3
+\openout3 = `fin_0.1.out'.
+
+LaTeX Font Info:    Try loading font information for U+lasy on input line 39.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <22> not available
+(Font)              size <20.74> substituted on input line 39.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <22> not available
+(Font)              size <20.74> substituted on input line 39.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+\openout2 = `introduction.aux'.
+
+ (./introduction.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 \include{introduction}
+                            [1
+
+]
+\openout2 = `conception.aux'.
+
+ (./conception.tex
+<images/meas_dia.pdf, id=112, 898.35625pt x 197.73875pt>
+File: images/meas_dia.pdf Graphic file (type pdf)
+
+<use images/meas_dia.pdf>
+Package pdftex.def Info: images/meas_dia.pdf used on input line 12.
+(pdftex.def)             Requested size: 281.85587pt x 62.0376pt.
+
+<images/AdaptiveFilter_C.png, id=113, 2283.53125pt x 887.315pt>
+File: images/AdaptiveFilter_C.png Graphic file (type png)
+
+<use images/AdaptiveFilter_C.png>
+Package pdftex.def Info: images/AdaptiveFilter_C.png used on input line 18.
+(pdftex.def)             Requested size: 187.89914pt x 73.004pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 11--22
+[]$[]$  $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[2
+
+
+ <./images/meas_dia.pdf> <./images/AdaptiveFilter_C.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 42.
+
+<images/adapt_1.pdf, id=208, 924.45375pt x 483.8075pt>
+File: images/adapt_1.pdf Graphic file (type pdf)
+
+<use images/adapt_1.pdf>
+Package pdftex.def Info: images/adapt_1.pdf used on input line 44.
+(pdftex.def)             Requested size: 469.75502pt x 245.8453pt.
+ <images/ad_m.png, id=209, 439.6425pt x 405.515pt>
+File: images/ad_m.png Graphic file (type png)
+
+<use images/ad_m.png>
+Package pdftex.def Info: images/ad_m.png used on input line 55.
+(pdftex.def)             Requested size: 281.85587pt x 259.9804pt.
+ <images/system.png, id=211, 149.55875pt x 164.615pt>
+File: images/system.png Graphic file (type png)
+
+<use images/system.png>
+Package pdftex.def Info: images/system.png used on input line 60.
+(pdftex.def)             Requested size: 140.92793pt x 155.12494pt.
+
+Overfull \hbox (5.22931pt too wide) in paragraph at lines 54--64
+[][]   [] 
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[3 <./images/adapt_1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[4 <./images/ad_m.png> <./images/system.png>]
+\openout2 = `theory.aux'.
+
+ (./theory.tex
+<images/adaptive_scheme.png, id=305, 351.2322pt x 324.4923pt>
+File: images/adaptive_scheme.png Graphic file (type png)
+
+<use images/adaptive_scheme.png>
+Package pdftex.def Info: images/adaptive_scheme.png used on input line 5.
+(pdftex.def)             Requested size: 234.8775pt x 217.0027pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[5
+
+
+ <./images/adaptive_scheme.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[6] <images/process.pdf, id=343, 776.9025pt x 260.975pt>
+File: images/process.pdf Graphic file (type pdf)
+
+<use images/process.pdf>
+Package pdftex.def Info: images/process.pdf used on input line 92.
+(pdftex.def)             Requested size: 446.26582pt x 149.91211pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[7 <./images/process.pdf>]
+<images/process_sceme.pdf, id=415, 749.80125pt x 205.76875pt>
+File: images/process_sceme.pdf Graphic file (type pdf)
+
+<use images/process_sceme.pdf>
+Package pdftex.def Info: images/process_sceme.pdf used on input line 113.
+(pdftex.def)             Requested size: 422.77664pt x 116.02406pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[8 <./images/process_sceme.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[9]
+Overfull \hbox (71.32095pt too wide) detected at line 274
+[] []  \OML/cmm/m/it/12 d^^\ G\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OMS/cmsy/m/n
+/12 ^^@ \OML/cmm/m/it/12 ^^\\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 ^^\\OT1/cmr/m/n/12 ) = [] [] \OML/cmm/m/it/12 G\OT1/cmr/m/n
+/12 (\OML/cmm/m/it/12 t \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 t[]\OT1/cmr/m/n/1
+2 )\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 )\O
+ML/cmm/m/it/12 dt \OT1/cmr/m/n/12 = [] [] [] \OML/cmm/m/it/12 dt
+ []
+
+
+Overfull \hbox (90.24731pt too wide) detected at line 356
+[] \OT1/cmr/bx/n/6 V[] \OT1/cmr/m/n/6 = []
+ []
+
+
+Overfull \hbox (16.20796pt too wide) detected at line 373
+\OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/cm
+m/m/it/12 dt\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\O
+T1/cmr/m/n/12 ) + \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/
+cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 b[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 
+) = \OML/cmm/m/it/12 g [] ^^P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/1
+2 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\O
+ML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 ) + \OML/
+cmm/m/it/12 g [] ^^P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/
+cmm/m/it/12 dt\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 )
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[10])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[11]
+\openout2 = `results.aux'.
+
+ (./results.tex <images/z_big_F.png, id=525, 578.16pt x 433.62pt>
+File: images/z_big_F.png Graphic file (type png)
+
+<use images/z_big_F.png>
+Package pdftex.def Info: images/z_big_F.png used on input line 6.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+ <images/T_a10_big.png, id=526, 578.16pt x 433.62pt>
+File: images/T_a10_big.png Graphic file (type png)
+
+<use images/T_a10_big.png>
+Package pdftex.def Info: images/T_a10_big.png used on input line 10.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 5--12
+[]$[]$  $[]$ 
+ []
+
+<images/F_a10_big.png, id=529, 578.16pt x 433.62pt>
+File: images/F_a10_big.png Graphic file (type png)
+ <use images/F_a10_big.png>
+Package pdftex.def Info: images/F_a10_big.png used on input line 18.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+
+<images/F_a10_big_ph.png, id=530, 578.16pt x 433.62pt>
+File: images/F_a10_big_ph.png Graphic file (type png)
+
+<use images/F_a10_big_ph.png>
+Package pdftex.def Info: images/F_a10_big_ph.png used on input line 22.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 17--24
+[]$[]$  $[]$ 
+ []
+
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[12
+
+
+ <./images/z_big_F.png> <./images/T_a10_big.png> <./images/F_a10_big.png> <./im
+ages/F_a10_big_ph.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[13]
+\openout2 = `conversation.aux'.
+
+
+No file conversation.tex.
+\openout2 = `appendix.aux'.
+
+(./appendix.tex
+
+LaTeX Warning: Reference `Kay' on page 14 undefined on input line 35.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[14
+
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[15]
+Overfull \hbox (69.49835pt too wide) detected at line 112
+[]\OML/cmm/m/it/12 Y \OT1/cmr/m/n/12 = []  \OML/cmm/m/it/12 dt[][]g[]\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12
+ (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 g[]\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 )[] []  \OML/cmm/m/it/12 dt[]G\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 t[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 t[]\OT1/cmr/m/n/
+12 )^^B(\OML/cmm/m/it/12 t[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 t[]\OT1/cmr/
+m/n/12 )\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/1
+2 ) + \OML/cmm/m/it/12 g[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 
+)\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 )[] +
+ [] []  \OML/cmm/m/it/12 dt[] g[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/
+m/n/12 )\OML/cmm/m/it/12 x[] [] ![]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[] \OMS/c
+msy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^\\OT1/cmr/m/n/12 )
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[16])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[17] (./fin_0.1.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[18
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+ (./fin_0.1.aux (./introduction.aux) (./conception.aux) (./theory.aux)
+(./results.aux) (./conversation.aux) (./appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package rerunfilecheck Info: File `fin_0.1.out' has not changed.
+(rerunfilecheck)             Checksum: D01DCB7B6BFA535CE2995EFA1AB881B4;931.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.26pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
+ ) 
+Here is how much of TeX's memory you used:
+ 7471 strings out of 494816
+ 106229 string characters out of 3177878
+ 218184 words of memory out of 3000000
+ 10324 multiletter control sequences out of 15000+200000
+ 14182 words of font info for 58 fonts, out of 3000000 for 9000
+ 198 hyphenation exceptions out of 8191
+ 36i,20n,43p,735b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb>
+Output written on fin_0.1.pdf (20 pages, 617098 bytes).
+PDF statistics:
+ 724 PDF objects out of 1000 (max. 8388607)
+ 481 compressed objects within 5 object streams
+ 166 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+
