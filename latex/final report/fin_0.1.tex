@@ -1,0 +1,53 @@
+\documentclass[colorlinks=true,pdfstartview=FitV,linkcolor=blue, citecolor=red,urlcolor=magenta]{ligodoc}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{hhline}
+\usepackage{wrapfig}
+\usepackage{lineno} % adding line number
+% \linenumbers
+
+
+\renewcommand{\tan}{\mathop{\rm tg}\nolimits}
+\newcommand{\bra}[1]{\langle#1|}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bracket}[2]{\langle#1|#2\rangle}
+\newcommand{\mean}[1]{\langle#1\rangle}
+\newcommand{\means}[1]{\langle#1\rangle_{sym}}
+\newcommand{\Tr}[1]{\textbf{Tr}\{#1\}}
+\newcommand{\dt}[1]{\frac{\partial #1}{\partial t}}
+\newcommand{\I}[2]{\int\limits_{#1}^{#2}\,}
+\newcommand{\note}[1]{\textcolor{red}{#1}}
+
+
+\ligodccnumber{T}{12}{00383}{}{v1}
+% \ligodistribution{AIC, ISC}
+\graphicspath{{images/}}
+
+\bibliographystyle{unsrt}
+\title{Adaptive Quantum Measurements in Future Gravitational-wave Detectors}
+
+\author{Mikhail Korobko, Haixing Miao, and Yanbei Chen}
+
+\begin{document}
+% \include{notation}
+\include{introduction}
+\include{conception}
+\include{theory}
+\include{results}
+\include{conversation}
+%------------------------------------------------------------------------------------------------------
+\newpage
+\include{appendix}
+
+\newpage
+\bibliography{Bibtex/adaptive,Bibtex/mqm,Bibtex/mqm_my,Bibtex/ligo,Bibtex/ligo_my,Bibtex/biblio_u,Bibtex/misc_u}
+
+\end{document}
