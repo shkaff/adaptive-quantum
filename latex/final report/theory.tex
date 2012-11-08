@@ -291,135 +291,87 @@ Suppose, that we can make prediction about both quadratures $b_{1,2}$. Then:
   \hat{b}_2(t) = \hat{a}_2(t) + \frac{\alpha^2}{\hbar}\int\limits_0^{\infty} dt' \, G(t-t') \,\Theta(t-t') \hat{a}(t') + \frac{\alpha}{\hbar}x_0 \sin \omega_m (t-\tilde{\tau})
  \end{cases}
 \end{equation}
-In back-action term we can use sum instead of the integral. So we can write this integral as product of two vectors:
-\begin{multline}
- \I{0}{t}d\tau\, G(t-\tau)a_1(\tau) = \lim\limits_{dt\rightarrow0}\sum\limits_{i=1}^NG(t-t_i) a_1(t_i) dt = \\ =\lim\limits_{dt\rightarrow0} 
-\begin{bmatrix}
- G(t-t_1), & G(t-t_2), & \hdots, & G(t-t_N)
-\end{bmatrix}
-\begin{bmatrix}
- a_1(t_1)\\a_1(t_2)\\\vdots\\a_2(t_N)
-\end{bmatrix}
-dt
-\end{multline}
-where $t_i = i\,dt, t_N = t$.
+% In back-action term we can use sum instead of the integral. So we can write this integral as product of two vectors:
+% \begin{multline}
+%  \I{0}{t}d\tau\, G(t-\tau)a_1(\tau) = \lim\limits_{dt\rightarrow0}\sum\limits_{i=1}^NG(t-t_i) a_1(t_i) dt = \\ =\lim\limits_{dt\rightarrow0} 
+% \begin{bmatrix}
+%  G(t-t_1), & G(t-t_2), & \hdots, & G(t-t_N)
+% \end{bmatrix}
+% \begin{bmatrix}
+%  a_1(t_1)\\a_1(t_2)\\\vdots\\a_2(t_N)
+% \end{bmatrix}
+% dt
+% \end{multline}
+% where $t_i = i\,dt, t_N = t$.
 
-For any moment of time $t$ we can compute back-action matrix as:
-\begin{equation}
- \begin{bmatrix}
-  BA(t_1)\\BA(t_2)\\\vdots\\BA(t)
- \end{bmatrix}
-=\alpha
-\begin{bmatrix}
- 0 & 0 & 0 &\hdots & 0\\
- G(t_2-t_1) &0 &0 &\hdots & 0\\
- G(t_3-t_1) &G(t_3-t_2) &0 &\hdots & 0\\
-\vdots &\vdots &\vdots &\ddots & \vdots\\
-G(t-t_1) &G(t-t_2) &G(t-t_3) &\hdots & 0
-\end{bmatrix}
-\begin{bmatrix}
- a_1(t_1)\\a_1(t_2)\\\vdots\\a_2(t)
-\end{bmatrix}
-dt
-\end{equation}
+% For any moment of time $t$ we can compute back-action matrix as:
+% \begin{equation}
+%  \begin{bmatrix}
+%   BA(t_1)\\BA(t_2)\\\vdots\\BA(t)
+%  \end{bmatrix}
+% =\alpha
+% \begin{bmatrix}
+%  0 & 0 & 0 &\hdots & 0\\
+%  G(t_2-t_1) &0 &0 &\hdots & 0\\
+%  G(t_3-t_1) &G(t_3-t_2) &0 &\hdots & 0\\
+% \vdots &\vdots &\vdots &\ddots & \vdots\\
+% G(t-t_1) &G(t-t_2) &G(t-t_3) &\hdots & 0
+% \end{bmatrix}
+% \begin{bmatrix}
+%  a_1(t_1)\\a_1(t_2)\\\vdots\\a_2(t)
+% \end{bmatrix}
+% dt
+% \end{equation}
 
-Here we can use the same filtering approach, but now for two quadratures:
+% \begin{equation}
+%  \begin{bmatrix}
+%   \hat{b}_1(t+dt)\\ \hat{b}_2(t+dt)\\ \hat{b}_1(t+2dt)\\ \hat{b}_2(t+2dt)
+%  \end{bmatrix}
+% =
+% \begin{bmatrix}
+%  0 \\ \frac{\alpha}{\hbar} \sin \omega_m(t+dt) \\ 0 \\ \frac{\alpha}{\hbar} \sin \omega_m(t+2dt)
+% \end{bmatrix}
+% x_0 + 
+% \begin{bmatrix}
+%  \hat{n}_1(t+dt) \\ \hat{n}_2(t+dt)\\ \hat{n}_1(t+2dt) \\ \hat{n}_2(t+2dt)
+% \end{bmatrix}
+% \end{equation}
+If we take into account this prediction, we can assume, that in the moments after time $t$ we can measure both quadratures at the same time:
 \begin{equation}
- \begin{bmatrix}
-  \hat{b}_1(t+dt)\\ \hat{b}_2(t+dt)
- \end{bmatrix}
+\mathbf{y}
+\begin{bmatrix}
+ y(t_1)\\\vdots\\ y(t) \\ \hat{b}_1(t+dt)\\ \hat{b}_2(t+dt)\\ \hat{b}_1(t+2dt)\\ \hat{b}_2(t+2dt)
+\end{bmatrix}
 =
 \begin{bmatrix}
- 0 \\ \frac{\alpha}{\hbar} \sin \omega_m(t+dt)
+ \frac{\alpha}{\hbar} \sin \omega_m(t_1)\\ \vdots \\ \frac{\alpha}{\hbar} \sin \omega_m(t)\\ 0 \\ \frac{\alpha}{\hbar} \sin \omega_m(t+dt) \\ 0 \\ \frac{\alpha}{\hbar} \sin \omega_m(t+2dt)
 \end{bmatrix}
-x_0 + 
+x_0+
 \begin{bmatrix}
- \hat{n}_1(t+dt) \\ \hat{n}_2(t+dt)
+ \hat{n}_1(t_1)\cos(\omega_mt_1) + \hat{n}_2(t_1)\sin{\omega_mt_1}\\
+ \vdots\\
+\hat{n}_1(t)\cos(\omega_mt) + \hat{n}_2(t_1)\sin{\omega_mt}\\
+\hat{n}_1(t+dt) \\ \hat{n}_2(t+dt)\\ \hat{n}_1(t+2dt) \\ \hat{n}_2(t+2dt)
 \end{bmatrix}
+= \mathbb{D}x_0+\mathbf{n}
 \end{equation}
-
-Then covariation matrix between signal and output would be:
-{\tiny
-\begin{equation}
-\hspace{-2cm} \bf{V}_2 = 
- \begin{bmatrix}
- \begin{tabular}{c|c|cccc}
-   $\mean{x_0, x_0}$ & $V_{xy}^{(1)}$ & $\mean{x_0,b_1(t+dt)}$ & $\mean{x_0,b_2(t+dt)}$ & $\mean{x_0,b_1(t+2dt)}$ & $\mean{x_0,b_2(t+2dt)}$\\
-   \hline
-   ${V_{xy}^{(1)}}^T$  & $V_{yy}^{(1)}$ & 
-$\begin{matrix}
-\mean{y(t_1),b_1(t+dt)}\\
-\vdots \\
-\mean{y(t),b_1(t+dt)} \\
-\end{matrix}$ & $\begin{matrix}
-\mean{y(t_1),b_2(t+dt)}\\
-\vdots\\
-\mean{y(t),b_2(t+dt)}\\
-\end{matrix}$ &
-$\begin{matrix}
-\mean{y(t_1),b_1(t+2dt)}\\
-\vdots \\
-\mean{y(t),b_1(t+2dt)} \\
-\end{matrix}$ & $\begin{matrix}
-\mean{y(t_1),b_2(t+2dt)}\\
-\vdots\\
-\mean{y(t),b_2(t+2dt)}\\
-\end{matrix}$\\
-\hline
-$\mean{b_1(t+dt),x_0}$ & 
-$\begin{matrix}
-\mean{b_1(t+dt),y(t_1)} & \ldots & \mean{b_1(t+dt),y(t)} \\
-\end{matrix}$ & $\mean{b_1(t+dt),b_1(t+dt)}$ & $\mean{b_1(t+dt),b_2(t+dt)}$ & $\mean{b_1(t+dt),b_1(t+2dt)}$ & $\mean{b_1(t+dt),b_2(t+2dt)}$\\
-$\mean{b_2(t+dt),x_0}$ & 
-$\begin{matrix}
-\mean{b_2(t+dt),y(t_1)} & \ldots & \mean{b_2(t+dt),y(t)} \\
-\end{matrix}$ & $\mean{b_2(t+dt),b_1(t+dt)}$ & $\mean{b_2(t+dt),b_2(t+dt)}$& $\mean{b_2(t+dt),b_1(t+2dt)}$ & $\mean{b_2(t+dt),b_2(t+2dt)}$\\
-$\mean{b_1(t+2dt),x_0}$ & 
-$\begin{matrix}
-\mean{b_1(t+2dt),y(t_1)} & \ldots & \mean{b_1(t+2dt),y(t)} \\
-\end{matrix}$ & $\mean{b_1(t+2dt),b_1(t+dt)}$ & $\mean{b_1(t+2dt),b_2(t+dt)}$ & $\mean{b_1(t+2dt),b_1(t+2dt)}$ & $\mean{b_1(t+2dt),b_2(t+2dt)}$\\
-$\mean{b_2(t+2dt),x_0}$ & 
-$\begin{matrix}
-\mean{b_2(t+2dt),y(t_1)} & \ldots & \mean{b_2(t+2dt),y(t)} \\
-\end{matrix}$ & $\mean{b_2(t+2dt),b_1(t+dt)}$ & $\mean{b_2(t+2dt),b_2(t+dt)}$ & $\mean{b_2(t+2dt),b_1(t+2dt)}$ & $\mean{b_2(t+2dt),b_2(t+2dt)}$
-  \end{tabular}
- \end{bmatrix}
-\end{equation}
-}
-Then filter is
-\begin{equation}
-\mathbb{K}_2 = V_{xy}^{(2)}{V_{yy}^{(2)}}^{-1} = 
+Then we construct the estimator in the same way, as before:
+\begin{multline}
+ \tilde{x}_0 = (\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1}\mathbb{D}^T\mathbb{N}^{-1}\mathbf{y} = \\ =
 \begin{bmatrix}
- K_{y(t_1)}\\K_{y(t_2)}\\\vdots\\K_{y(t)} \\K_1(t+dt)\\K_2(t+dt)\\K_1(t+2dt)\\K_2(t+2dt)
+ L_1, & L_2, & \hdots & L_N, & L_{N+1}, & L_{N+1}^{'}, & L_{N+2}, & L_{N+2}^{'}
 \end{bmatrix}
-\end{equation}
-where 
-\begin{equation}
-  V_{xy}^{(2)} = 
 \begin{bmatrix}
- V_{xy}^{(1)}, & \mean{x_0,b_1(t+dt)}, & \mean{x_0,b_2(t+dt)} & \mean{x_0,b_1(t+2dt)}, & \mean{x_0,b_2(t+2dt)}
+ y(t_1)\\\vdots\\ y(t) \\ \hat{b}_1(t+dt)\\ \hat{b}_2(t+dt)\\ \hat{b}_1(t+2dt)\\ \hat{b}_2(t+2dt)
 \end{bmatrix}
-\end{equation}
-Here we remember that we have to get homodyne angle at time $t+dt$ to evade the back-action at time $t+2dt$
-Then due to the fact that readout is $$Y(t+dt)=K_1(t+dt) b_1(t+dt) + K_2(t+dt) b_2(t+dt) = g \cos\zeta(t+dt)b_1(t+dt)+g\sin\zeta(t+dt)b_2(t+dt)$$ 
-we can find homodyne angle as
+=\\ =Y_N + L_{N+1}\hat{b}_1(t+dt)+L_{N+1}^{'}\hat{b}_2(t+dt)+L_{N+1}\hat{b}_1(t+2dt)+L_{N+1}^{'}\hat{b}_2(t+2dt)
+\end{multline}
+From the other hand, if we apply some filtering function $K$ to real data $\mathbf{y}_r$ at time step $t+2t$,we get
+\begin{multline}
+ \tilde{x}_0 = \mathbb{K}\mathbf{y}_r = \mathbb{K}_N\mathbf{y}_N + K_{N+1}\hat{b}_1(t+dt)\cos\zeta(t+dt)+K_{N+1}\hat{b}_2(t+dt)\sin\zeta(t+dt)+\\+ K_{N+2}\hat{b}_1(t+2dt)\cos\zeta(t+dt)+K_{N+2}\hat{b}_2(t+dt)\sin\zeta(t+2dt)
+\end{multline}
+We are interested in only the part of this equation with time $t+dt$. Obviously, from last two equation we get:
 \begin{equation}
- \zeta(t+dt) = \arctan\frac{K_2(t+dt)}{K_1(t+dt)}
+ \tan \zeta(t+dt) = \frac{L_{N+1}}{L_{N+1}^{'}}
 \end{equation}
-
-If we compute all the covariation functions, we get:
-\begin{equation}
- \means{x_0,x_0} = \sigma_{x_0}
-\end{equation}
-\begin{align}
-& \means{x_0,b_1(t+dt)} = 0\\
-& \means{x_0,b_2(t+dt)} = \frac{\alpha}{\hbar}\sigma_{x_0} \sin\omega_m(t+dt-\tilde{\tau})
-\end{align}
-
-And output correlations with signal at time $t_j<t_i$:
-\begin{equation}
-\begin{cases}
-\means{b_1(t_i),y(t_j)} = 0\\
-\means{b_2(t_i), y(t_j)} = \means{b_2(t_i),b_1(t_j)}\cos\zeta(t_j) + \means{b_2(t_i),b_2(t_j)}\sin\zeta(t_j)
-\end{cases}
-\end{equation}
+And we simply get the homodyne angle at step $t+2dt$ that minimizes the back-action on the step $t+2dt$
