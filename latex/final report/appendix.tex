@@ -32,7 +32,7 @@ Because of the positive definition of $(d\rho(x_i))^2$ we can write, that $\frac
 \end{equation}
 
 We proved that for any change of coordinates the maximum of entropy conserves and then conserves the optimum of the estimation.
-\section{Linear estimation\ref{Kay}}\label{filtering}
+\section{Linear estimation\cite{S.N1993}}\label{filtering}
 Consider output signal to be
 \begin{equation}
   \mathbf{y} = \mathbb{D} x + \mathbf{n},
@@ -60,7 +60,7 @@ then we get the constraint for filtering function:
 \end{equation}
 Our aim is to find optimal in sense of minimal of variation filtering function.
 Variation of the estimation is:
-\begin{equation}
+\begin{equation}\label{appx:var}
  var(\hat{x}) = E[(x-\hat{x})^2] = E[(\mathbb{L}(E[\mathbf{y}] - \mathbf{y}))^2] = E[\mathbb{L}(\mathbf{y}-E[\mathbf{y}])(\mathbf{y}-E[\mathbf{y}])^T\mathbb{L}^T] =\mathbb{L}\mathbb{N}\mathbb{L}^T 
 \end{equation}
 We should take into account the constraint\label{appx:constraint} and construct Lagrange function:
@@ -90,6 +90,11 @@ and finally we get an equation for filtering function:
 \begin{equation}\label{appx:est}
  \mathbb{L} = (\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1}\mathbb{D}^T\mathbb{N}^{-1}
 \end{equation}
+We can also simply calculate the variation for this estimation (see Eq.\ref{appx:var}).
+\begin{equation}
+ \tilde{x} = \mathbb{L}\mathbb{N}\mathbb{L}^T = (\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1}\mathbb{D}^T\mathbb{N}^{-1}\mathbb{N}\mathbb{N}^{-1}\mathbb{D}(\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1} = (\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1}
+\end{equation}
+
 
 \section{Variational measurements}\label{appx:variational}
 
@@ -155,7 +160,7 @@ Then we can substitute Eq.\ref{g2} to Eq.\ref{BAE} and get equation for $g_1(t)$
  g_1(t) = \frac{\alpha}{m \omega_m} \frac{-2\omega_m(t-T)\cos\omega_m(t-\tau) + \sin\omega_m(t-\tau) + \sin\omega_m(t-2T+\tau)}{-2T\omega_m + \sin2\omega_m(T-\tau)+\sin2\omega_m\tau}
 \end{equation}
 So,we can get analytical equation for homodyne angle from Eq.\ref{g1},\ref{g2}:
-\begin{equation}
+\begin{equation}\label{appx:zeta}
  \zeta(t) = \arctan\frac{g_2(t)}{g_1(t)}
 \end{equation}
 
