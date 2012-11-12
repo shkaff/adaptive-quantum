@@ -17,7 +17,7 @@ correlation between the measurement noise and the back-action noise.\cite{Unruh1
 
 In planned third generation detectors,like Einstein Telescope gravitational-wave detector \cite{Sathyaprakash2011} using these methods is supposed,
  that should provide sensitivity better than the SQL. However, both of them require sufficient
- modification of existing experimental schemes and have some technical difficulties (for example, variational-readout scheme is sensitive to optical losses).
+ modification of existing experimental schemes and have some technical difficulties (for example, variational-readout scheme is sensitive to optical losses [?]).
 
 In our work we want to investigate the other approach - adaptive linear measurements. The idea is to change
  the parameters of the scheme depending on the results of previous measurements. Our aim was to create the effective algorithm for quantum adaptive measurements,

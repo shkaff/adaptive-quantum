@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.5.31)  8 NOV 2012 11:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.5.31)  12 NOV 2012 08:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -373,8 +373,11 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box35
 LaTeX Info: Redefining \\ on input line 3056.
 ) (./fin_0.1.aux
-(./introduction.aux) (./conception.aux) (./theory.aux) (./results.aux)
-(./conversation.aux) (./appendix.aux
+(./introduction.aux) (./theory.aux) (./results.aux
+
+LaTeX Warning: Label `pic:hom' multiply defined.
+
+) (./conversation.aux) (./appendix.aux
 
 LaTeX Warning: Label `appx:constraint' multiply defined.
 
@@ -484,32 +487,28 @@ l.41 \include{introduction}
                             [1
 
 ]
-\openout2 = `conception.aux'.
+\openout2 = `theory.aux'.
 
- (./conception.tex
-<images/meas_dia.pdf, id=112, 898.35625pt x 197.73875pt>
+ (./theory.tex
+<images/meas_dia.pdf, id=103, 898.35625pt x 197.73875pt>
 File: images/meas_dia.pdf Graphic file (type pdf)
 
 <use images/meas_dia.pdf>
-Package pdftex.def Info: images/meas_dia.pdf used on input line 12.
-(pdftex.def)             Requested size: 281.85587pt x 62.0376pt.
+Package pdftex.def Info: images/meas_dia.pdf used on input line 6.
+(pdftex.def)             Requested size: 469.75502pt x 103.39801pt.
 
-<images/AdaptiveFilter_C.png, id=113, 2283.53125pt x 887.315pt>
-File: images/AdaptiveFilter_C.png Graphic file (type png)
+<images/adaptive_scheme.png, id=115, 351.2322pt x 324.4923pt>
+File: images/adaptive_scheme.png Graphic file (type png)
 
-<use images/AdaptiveFilter_C.png>
-Package pdftex.def Info: images/AdaptiveFilter_C.png used on input line 18.
-(pdftex.def)             Requested size: 187.89914pt x 73.004pt.
+<use images/adaptive_scheme.png>
+Package pdftex.def Info: images/adaptive_scheme.png used on input line 26.
+(pdftex.def)             Requested size: 281.85587pt x 260.4062pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 11--22
-[]$[]$  $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
-
- []
-
+<images/system.png, id=117, 149.55875pt x 164.615pt>
+File: images/system.png Graphic file (type png)
+ <use images/system.png>
+Package pdftex.def Info: images/system.png used on input line 30.
+(pdftex.def)             Requested size: 140.92793pt x 155.12494pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -520,80 +519,18 @@ Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 [2
 
 
- <./images/meas_dia.pdf> <./images/AdaptiveFilter_C.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 42.
-
-<images/adapt_1.pdf, id=208, 924.45375pt x 483.8075pt>
-File: images/adapt_1.pdf Graphic file (type pdf)
-
-<use images/adapt_1.pdf>
-Package pdftex.def Info: images/adapt_1.pdf used on input line 44.
-(pdftex.def)             Requested size: 469.75502pt x 245.8453pt.
- <images/ad_m.png, id=209, 439.6425pt x 405.515pt>
-File: images/ad_m.png Graphic file (type png)
-
-<use images/ad_m.png>
-Package pdftex.def Info: images/ad_m.png used on input line 55.
-(pdftex.def)             Requested size: 281.85587pt x 259.9804pt.
- <images/system.png, id=211, 149.55875pt x 164.615pt>
-File: images/system.png Graphic file (type png)
-
-<use images/system.png>
-Package pdftex.def Info: images/system.png used on input line 60.
-(pdftex.def)             Requested size: 140.92793pt x 155.12494pt.
-
-Overfull \hbox (5.22931pt too wide) in paragraph at lines 54--64
-[][]   [] 
- []
-
-)
+ <./images/meas_dia.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[3 <./images/adapt_1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (7.73332pt too high) has occurred while \output is active []
-
-
-[4 <./images/ad_m.png> <./images/system.png>]
-\openout2 = `theory.aux'.
-
- (./theory.tex
-<images/adaptive_scheme.png, id=305, 351.2322pt x 324.4923pt>
-File: images/adaptive_scheme.png Graphic file (type png)
-
-<use images/adaptive_scheme.png>
-Package pdftex.def Info: images/adaptive_scheme.png used on input line 5.
-(pdftex.def)             Requested size: 234.8775pt x 217.0027pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (7.73332pt too high) has occurred while \output is active []
-
-
-[5
-
-
- <./images/adaptive_scheme.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (7.73332pt too high) has occurred while \output is active []
-
-
-[6] <images/process.pdf, id=343, 776.9025pt x 260.975pt>
+[3 <./images/adaptive_scheme.png> <./images/system.png>]
+<images/process.pdf, id=225, 776.9025pt x 260.975pt>
 File: images/process.pdf Graphic file (type pdf)
-
-<use images/process.pdf>
-Package pdftex.def Info: images/process.pdf used on input line 92.
+ <use images/process.pdf>
+Package pdftex.def Info: images/process.pdf used on input line 120.
 (pdftex.def)             Requested size: 446.26582pt x 149.91211pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -602,12 +539,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[7 <./images/process.pdf>]
-<images/process_sceme.pdf, id=415, 749.80125pt x 205.76875pt>
+[4] <images/process_sceme.pdf, id=247, 749.80125pt x 205.76875pt>
 File: images/process_sceme.pdf Graphic file (type pdf)
 
 <use images/process_sceme.pdf>
-Package pdftex.def Info: images/process_sceme.pdf used on input line 113.
+Package pdftex.def Info: images/process_sceme.pdf used on input line 142.
 (pdftex.def)             Requested size: 422.77664pt x 116.02406pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -616,100 +552,55 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[8 <./images/process_sceme.pdf>]
+[5 <./images/process.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[9]
-Overfull \hbox (71.32095pt too wide) detected at line 274
-[] []  \OML/cmm/m/it/12 d^^\ G\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OMS/cmsy/m/n
-/12 ^^@ \OML/cmm/m/it/12 ^^\\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/1
-2 (\OML/cmm/m/it/12 ^^\\OT1/cmr/m/n/12 ) = [] [] \OML/cmm/m/it/12 G\OT1/cmr/m/n
-/12 (\OML/cmm/m/it/12 t \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 t[]\OT1/cmr/m/n/1
-2 )\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 )\O
-ML/cmm/m/it/12 dt \OT1/cmr/m/n/12 = [] [] [] \OML/cmm/m/it/12 dt
- []
-
-
-Overfull \hbox (90.24731pt too wide) detected at line 356
-[] \OT1/cmr/bx/n/6 V[] \OT1/cmr/m/n/6 = []
- []
-
-
-Overfull \hbox (16.20796pt too wide) detected at line 373
-\OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/cm
-m/m/it/12 dt\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 (\OML/cmm/m
-/it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
- b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\O
-T1/cmr/m/n/12 ) + \OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/
-cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 b[]\OT1/cmr/m
-/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 
-) = \OML/cmm/m/it/12 g [] ^^P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/1
-2 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\O
-ML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 ) + \OML/
-cmm/m/it/12 g [] ^^P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + \OML/
-cmm/m/it/12 dt\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/
-it/12 t \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 dt\OT1/cmr/m/n/12 )
- []
-
-
+[6 <./images/process_sceme.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[10])
+[7])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[11]
+[8]
 \openout2 = `results.aux'.
 
- (./results.tex <images/z_big_F.png, id=525, 578.16pt x 433.62pt>
-File: images/z_big_F.png Graphic file (type png)
+ (./results.tex
+<images/homodyne_angle_var.png, id=411, 578.16pt x 433.62pt>
+File: images/homodyne_angle_var.png Graphic file (type png)
 
-<use images/z_big_F.png>
-Package pdftex.def Info: images/z_big_F.png used on input line 6.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
- <images/T_a10_big.png, id=526, 578.16pt x 433.62pt>
-File: images/T_a10_big.png Graphic file (type png)
-
-<use images/T_a10_big.png>
-Package pdftex.def Info: images/T_a10_big.png used on input line 10.
+<use images/homodyne_angle_var.png>
+Package pdftex.def Info: images/homodyne_angle_var.png used on input line 4.
 (pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 5--12
+<images/force_estimation.png, id=412, 578.16pt x 433.62pt>
+File: images/force_estimation.png Graphic file (type png)
+
+<use images/force_estimation.png>
+Package pdftex.def Info: images/force_estimation.png used on input line 8.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 3--10
 []$[]$  $[]$ 
  []
 
-<images/F_a10_big.png, id=529, 578.16pt x 433.62pt>
-File: images/F_a10_big.png Graphic file (type png)
- <use images/F_a10_big.png>
-Package pdftex.def Info: images/F_a10_big.png used on input line 18.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-<images/F_a10_big_ph.png, id=530, 578.16pt x 433.62pt>
-File: images/F_a10_big_ph.png Graphic file (type png)
-
-<use images/F_a10_big_ph.png>
-Package pdftex.def Info: images/F_a10_big_ph.png used on input line 22.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 17--24
-[]$[]$  $[]$ 
- []
-
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -717,18 +608,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[12
+[9
 
 
- <./images/z_big_F.png> <./images/T_a10_big.png> <./images/F_a10_big.png> <./im
-ages/F_a10_big_ph.png>]
+ <./images/homodyne_angle_var.png> <./images/force_estimation.png>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[13]
+[10]
 \openout2 = `conversation.aux'.
 
 
@@ -737,7 +627,8 @@ No file conversation.tex.
 
 (./appendix.tex
 
-LaTeX Warning: Reference `Kay' on page 14 undefined on input line 35.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 35.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -746,7 +637,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[14
+[11
 
 
 
@@ -758,8 +649,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[15]
-Overfull \hbox (69.49835pt too wide) detected at line 112
+[12]
+Overfull \hbox (69.49835pt too wide) detected at line 117
 []\OML/cmm/m/it/12 Y \OT1/cmr/m/n/12 = []  \OML/cmm/m/it/12 dt[][]g[]\OT1/cmr/m
 /n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12
  (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 g[]\OT1/cmr/m/n/12 (
@@ -781,21 +672,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[16])
+[13])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[17] (./fin_0.1.bbl
+[14] (./fin_0.1.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[18
+[15
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
@@ -806,21 +697,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (7.73332pt too high) has occurred while \output is active []
 
 
-[19]
+[16]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (./fin_0.1.aux (./introduction.aux) (./conception.aux) (./theory.aux)
-(./results.aux) (./conversation.aux) (./appendix.aux))
+ (./fin_0.1.aux (./introduction.aux) (./theory.aux) (./results.aux)
+(./conversation.aux) (./appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `fin_0.1.out' has not changed.
-(rerunfilecheck)             Checksum: D01DCB7B6BFA535CE2995EFA1AB881B4;931.
+(rerunfilecheck)             Checksum: ACD3A4F68D31DC6C87EEFA34CDCC5846;814.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.26pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -828,38 +716,31 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 7471 strings out of 494816
- 106229 string characters out of 3177878
- 218184 words of memory out of 3000000
- 10324 multiletter control sequences out of 15000+200000
- 14182 words of font info for 58 fonts, out of 3000000 for 9000
+ 7398 strings out of 494816
+ 105297 string characters out of 3177878
+ 207760 words of memory out of 3000000
+ 10293 multiletter control sequences out of 15000+200000
+ 11856 words of font info for 46 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 36i,20n,43p,735b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,43p,448b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/symbols/msbm10.pfb>
-Output written on fin_0.1.pdf (20 pages, 617098 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on fin_0.1.pdf (17 pages, 420620 bytes).
 PDF statistics:
- 724 PDF objects out of 1000 (max. 8388607)
- 481 compressed objects within 5 object streams
- 166 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 576 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 132 words of extra memory for PDF output out of 10000 (max. 10000000)
 

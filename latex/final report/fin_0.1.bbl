@@ -82,48 +82,6 @@ Alessandra Buonanno and Yanbei Chen.
 {B.Sathyaprakash {\it et al}}.
 \newblock {\em arXiv:1108.1423}, 2011.
 
-\bibitem{Farhang-Boroujeny1998}
-B~Farhang-Boroujeny.
-\newblock {Adaptive filters: theory and applications}.
-\newblock 1998.
-
-\bibitem{Sastry1989}
-S~Sastry and M~Bodson.
-\newblock {Adaptive control: stability, convergence, and robustness}.
-\newblock pages 17--19, 1989.
-
-\bibitem{Haykin2003}
-Symon Haykin.
-\newblock {Adaptive filter theory (ISE)}.
-\newblock 2003.
-
-\bibitem{Drumright1998}
-Thomas Drumright.
-\newblock {Adaptive Filtering}.
-\newblock 1998.
-
-\bibitem{Nationale1991}
-Ecole Nationale and De~Grenoble.
-\newblock {Adaptive control: theory and practical aspects}.
-\newblock 1, 1991.
-
-\bibitem{Huzmezan2002}
-Mihai Huzmezan and British Columbia.
-\newblock {Concepts, Methods and Techniques in Adaptive Control}.
-\newblock pages 1137--1150, 2002.
-
-\bibitem{Rehbein2009m}
-Henning Rehbein, Chao Li, Yasushi Mino, Roman Schnabel, Karsten Danzmann, and
-  Yanbei Chen.
-\newblock {Quantum state preparation and macroscopic entanglement in
-  gravitational-wave detectors}.
-\newblock pages 1--19, 2009.
-
-\bibitem{Miao}
-Haixing Miao, Stefan Danilishin, and Henning Rehbein.
-\newblock {Probing macroscopic quantum states with a sub-Heisenberg accuracy}.
-\newblock {\em Physical Review A}, pages 1--18, 2010.
-
 \bibitem{Wiseman2011a}
 H.~M. Wiseman.
 \newblock {Quantum measurement and control}.
@@ -182,5 +140,11 @@ S.P. Vyatchanin.
 \newblock {The estimation of signal force parameters in quantum variation
   measurement}.
 \newblock {\em Physics Letters A}, 239(March):201--208, 1998.
+
+\bibitem{S.N1993}
+Kay S.N.
+\newblock {\em {Fundamentals of Statistical Signal Processing, Volume I:
+  Estimation Theory}}.
+\newblock Prentice Hall PTR, 1 edition, 1993.
 
 \end{thebibliography}

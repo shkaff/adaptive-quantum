@@ -29,7 +29,7 @@ In this research we want to apply the same approach to the optomechanical system
 \begin{minipage}[b]{0.3\linewidth}
  \includegraphics[width=1.0\textwidth]{system}
 \end{minipage}
-\caption{Optomechanical system with laser beam, falling on the oscillator (\textit{right}) and homodyne detector, measuring position of this oscillator(\textit{left}) with feedback}
+\caption{Optomechanical system with laser beam, falling on the oscillator (\textit{right}) and homodyne detector, measuring position of this oscillator(\textit{left})}
  \label{pic:sys}
 \end{figure}
 
@@ -118,8 +118,7 @@ The important thing is, that, how it is shown in Appendix \ref{Appendix 1}, if e
 That is why we are solving not non-linear task, described by Eq.\ref{init_y}, but linear one, described by Eq.\ref{init_A}. 
 \begin{figure}[t]
  \center{\includegraphics[width=0.95\textwidth]{process}}
-\caption{Adaptive measurement scheme: $F, \tau$ are parameters we want to estimate; $\zeta(t)$ is adaptively changing homodyne angle; $y(t)$ is
-result of the measurement; $\tilde{\tau}$ is estimation for arrival time; $b_{1,2}$ are output optical quadratures; $K,K_{1,2}$ are filters}
+\caption{Adaptive measurement scheme}
 \label{pic:adaptive_process}
 \end{figure}
 
@@ -140,7 +139,7 @@ This procedure: prediction of quadratures, filtering and calculating the homodyn
 \end{enumerate}
 \begin{figure}
 \center{\includegraphics[width=0.9\textwidth]{process_sceme}}
-\caption{Scheme for understanding the second stage.$\zeta(t)$ is adaptively changing homodyne angle; $\tilde{\tau}$ is estimation for arrival time; $b_{1,2}$ are output optical quadratures}
+\caption{Scheme for understanding the second stage.}
 \label{pic:adaptive_virtual}
 \end{figure}
 

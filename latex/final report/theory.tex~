@@ -140,7 +140,7 @@ This procedure: prediction of quadratures, filtering and calculating the homodyn
 \end{enumerate}
 \begin{figure}
 \center{\includegraphics[width=0.9\textwidth]{process_sceme}}
-\caption{Scheme for understanding the second stage.$\zeta(t)$ is adaptively changing homodyne angle; $\tilde{\tau}$ is estimation for arrival time; $b_{1,2}$ are output optical quadratures}
+\caption{Scheme for understanding the second stage.}
 \label{pic:adaptive_virtual}
 \end{figure}
 

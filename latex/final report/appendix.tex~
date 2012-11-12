@@ -1,0 +1,170 @@
+\appendix
+\section{Conservation of optimal estimation while mapping}\label{Appendix 1}
+If the estimation is optimal it means that dispersion is minimal and then we can say that von Neumann entropy is maximal:
+\begin{align}
+& S = -\Tr{\rho(x) \ln \rho(x)}, \\
+& \delta S = 0, \\
+& \delta^2 S <0,
+\end{align}
+where $\rho(x)$ is density matrix that depends on parameter vector $x = \{x_1,x_2,...,x_n\}$.
+
+Then we can write for other coordinates $y=y(x)$
+\begin{equation}
+ \delta S = dS = \sum\limits_{i=1}^n \frac{\partial S}{\partial \rho(x_i)}d\rho(x_i)=\sum\limits_{i=1}^n \frac{\partial S}{\partial \rho(x_i)}\frac{d \rho(x_i)}{d x_i}dx_i =\sum\limits_{i=1}^n \frac{\partial S}{\partial \rho(y_i)}\frac{d \rho(y_i)}{d y_i}\frac{d y_i}{d x_i}dx_i =0
+\end{equation}
+Then 
+\begin{equation}\label{app:zero}
+\frac{\partial S}{\partial \rho(x_i)} = \frac{\partial S}{\partial \rho(y_i)} = 0
+\end{equation}
+if $\frac{\rho(y_i)}{\rho(x_i)}\neq0$. So, if $dS(x)=0$ then $dS(y)=0$
+And, for the second derivative:
+\begin{equation}\label{app:d2}
+ \delta^2 S = d^2 S(x) = \sum\limits_{i,j=1}^n \frac{\partial^2 S}{\partial \rho(x_i) \partial \rho(x_j)}d\rho(x_i)d\rho(x_j)
+\end{equation}
+This equation can be simplified using Eq.\ref{app:zero}: all the mixed therms would be equal to zero.
+Then we get from Eq.\ref{app:d2}:
+\begin{equation}
+ d^2 S(x) = \sum\limits_{i=1}^n \frac{\partial^2 S}{\partial \rho(x_i)^2 }(d\rho(x_i))^2<0
+\end{equation}
+Because of the positive definition of $(d\rho(x_i))^2$ we can write, that $\frac{\partial^2 S}{\partial \rho(x_i)^2 } < 0$ and for other coordinates:
+\begin{equation}
+ d^2 S(y) = \sum\limits_{i=1}^n \frac{\partial^2 S}{\partial \rho(y_i)^2 }(d\rho(y_i))^2 = \sum\limits_{i=1}^n \frac{\partial^2 S}{\partial \rho(x_i)^2 }(d\rho(x_i))^2 <0
+\end{equation}
+
+We proved that for any change of coordinates the maximum of entropy conserves and then conserves the optimum of the estimation.
+\section{Linear estimation\ref{Kay}}\label{filtering}
+Consider output signal to be
+\begin{equation}
+  \mathbf{y} = \mathbb{D} x + \mathbf{n},
+\end{equation}
+where $\mathbf{y}$ is a $N\times1$ vector, $\mathbb{D}$ is a known $N\times p$ matrix, $x$ is a $p\times 1$ vector of parameters, $\mathbf{n}$ is a 
+$N\times1$ noise vector with zero mean and covariance $\mathbb{N}$.
+
+We want to get unbiased estimation of $x$, assuming no prior knowledge about this signal. This estimation would be:
+\begin{equation}
+ x = \mathbb{L}\mathbf{y},
+\end{equation}
+where $\mathbb{L}$ is filtering function.
+
+The condition of unbiasedness leads to the following:
+\begin{equation}
+ E[\hat{x}] = \mathbb{L} E[\mathbf{y}] = x
+\end{equation}
+and noticing the zero mean of the noise:
+\begin{equation}
+ E[\mathbf{y}] = \mathbb{D} x,
+\end{equation}
+then we get the constraint for filtering function:
+\begin{equation}\label{appx:constraint}
+ \mathbb{L}\mathbb{D} = \mathbb{I}.
+\end{equation}
+Our aim is to find optimal in sense of minimal of variation filtering function.
+Variation of the estimation is:
+\begin{equation}\label{appx:var}
+ var(\hat{x}) = E[(x-\hat{x})^2] = E[(\mathbb{L}(E[\mathbf{y}] - \mathbf{y}))^2] = E[\mathbb{L}(\mathbf{y}-E[\mathbf{y}])(\mathbf{y}-E[\mathbf{y}])^T\mathbb{L}^T] =\mathbb{L}\mathbb{N}\mathbb{L}^T 
+\end{equation}
+We should take into account the constraint\label{appx:constraint} and construct Lagrange function:
+\begin{equation}
+ J[\mathbb{L}] = \mathbb{L}\mathbb{N}\mathbb{L}^T + \lambda (\mathbb{L}\mathbb{D} - \mathbb{I})
+\end{equation} 
+Then we calculate functional derivative over filtering function:
+\begin{equation}
+ \delta J[\mathbb{L}] = \delta \mathbb{L} \bigl(2 \mathbb{N}\mathbb{L}^T + \mathbb{D}\lambda \bigr) = 0
+\end{equation}
+Then 
+\begin{equation}
+ \mathbb{L}^T = -\frac{1}{2}\mathbb{N}^{-1}\mathbb{D}\lambda
+\end{equation}
+and 
+\begin{equation}
+ \mathbb{D}^T\mathbb{L}^T =  -\frac{1}{2}\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D}\lambda = \mathbb{I},
+\end{equation}
+So we get an equation for $\lambda$:
+\begin{equation}
+ -\frac{1}{2}\lambda = (\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1},
+\end{equation}
+\begin{equation}
+ \mathbb{L}^T = \mathbb{N}^{-1}\mathbb{D}(\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1}
+\end{equation}
+and finally we get an equation for filtering function:
+\begin{equation}\label{appx:est}
+ \mathbb{L} = (\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1}\mathbb{D}^T\mathbb{N}^{-1}
+\end{equation}
+We can also simply calculate the variation for this estimation (see Eq.\ref{appx:var}).
+\begin{equation}
+ \tilde{x} = \mathbb{L}\mathbb{N}\mathbb{L}^T = (\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1}\mathbb{D}^T\mathbb{N}^{-1}\mathbb{N}\mathbb{N}^{-1}\mathbb{D}(\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1} = (\mathbb{D}^T\mathbb{N}^{-1}\mathbb{D})^{-1}
+\end{equation}
+
+
+\section{Variational measurements}\label{appx:variational}
+
+Let's derive how homodyne angle changes in time.
+
+The output signal would be:
+\begin{multline}
+ y(t)=\hat{b}_1(t)\cos\zeta(t)+\hat{b}_2(t)\sin\zeta(t) = \\
+=\hat{a}_1(t)\cos \zeta(t)+\Bigl[\hat{a}_2(t)+\frac{\alpha}{\hbar}\bigl(\alpha \int\limits_0^{T} dt' \, G(t-t') \, \hat{a}(t') + \frac{\bar{F}}{m\omega_m}\sin\omega_m(t-\tau)\bigr)\Bigr]\sin\zeta(t)
+\end{multline}
+
+And after filtering with filtering function $g(t)$:
+\begin{equation}
+ Y=\I{0}{T}dt'\,(g(t')\hat{b}_1(t')\cos\zeta(t')+g(t')\hat{b}_2(t')\sin\zeta(t')) = \I{0}{T}dt'(g_1(t')\hat{b}_1(t')+g_2(t')\hat{b}_2),
+\end{equation}
+where $g_1(t)=g(t)\cos\zeta(t), g_2(t)=g(t)\sin\zeta(t)$.
+Or, we can write:
+\begin{equation}
+ Y = \I{0}{T} dt' \bigl(g_1(t')a_1(t')+g_2(t')\frac{\alpha^2}{\hbar}\I{0}{\infty}dt''G(t'-t'')\Theta(t'-t'')a_1(t'') + g_2(t')a_2(t')\bigr) + \frac{\alpha}{\hbar}\I{0}{T}dt'\,g_2(t')x_0\sin\omega_m(t'-\tau)
+\end{equation}
+Then, after changing the oder of interals, we can write down the equation for back-action evaison:
+\begin{equation}\label{BAE}
+ g_1(t)+\frac{\alpha^2}{\hbar}\I{t}{T}dt'\,g_2(t')G(t'-t)=0
+\end{equation}
+and then for $Y$ we get:
+\begin{equation}
+ Y_{BAE} = \I{0}{T} dt' \bigl(g_2(t')a_2(t') + \frac{\alpha}{\hbar}g_2(t')x_0\sin\omega_m(t'-\tau)\bigr)
+\end{equation}
+We can assume for maximizing the signal,that we have constraint:
+\begin{equation}
+ \frac{\alpha}{\hbar}\I{0}{T}dt'\,g_2(t')\sin\omega_m(t'-\tau) = 1
+\end{equation}
+Then we construct Lagrangian function:
+\begin{equation}\label{L}
+ \mathcal{L}[g_2(t)] = \mean{Y^2} + \mu (\frac{\alpha}{\hbar}\I{0}{T}dt'\,g_2(t')\sin\omega_m(t'-\tau) - 1)
+\end{equation}
+Here 
+\begin{equation}\label{<Y>}
+ \mean{Y^2} = \frac{1}{2}\I{0}{T}dt'g_2^2(t') + x_0^2
+\end{equation}
+because $\mean{a_2(t)a_2(t')}=\frac{1}{2}\delta(t-t')$.
+Then from Eq.\ref{L} we can calculate the variation of Lagrangian:
+\begin{equation}
+ \delta\mathcal{L}[g_2(t)] = \frac{1}{2}\delta\I{0}{T}dt'g_2^2(t') + \mu \delta(\frac{\alpha}{\hbar}\I{0}{T}dt'\,g_2(t')\sin\omega_m(t'-\tau) - 1)
+\end{equation}
+After calculation the variation:
+\begin{equation}
+ \delta\mathcal{L}[g_2(t)] = \I{0}{T}dt'\delta g_2(t')(g_2(t') + \mu \frac{\alpha}{\hbar}\sin\omega_m(t'-\tau)) = 0
+\end{equation}
+or, as to the fact that $\delta g_2(t') \neq 0$
+\begin{equation}
+\begin{cases}
+ g_2(t) + \mu \frac{\alpha}{\hbar}\sin\omega_m(t-\tau) = 0\\
+\frac{\alpha}{\hbar}\I{0}{T}dt'\,g_2(t')\sin\omega_m(t'-\tau) = 1
+\end{cases}
+\end{equation}
+Solving this system of equations, we get:
+\begin{equation}\label{g2}
+ g_2(t) = \frac{4\omega_m\hbar}{\alpha} \frac{\sin\omega_m(t-\tau)}{2\omega_mT-\sin2\omega_m(T-\tau)-\sin2\omega_m\tau}
+\end{equation}
+Then we can substitute Eq.\ref{g2} to Eq.\ref{BAE} and get equation for $g_1(t)$
+\begin{equation}\label{g1}
+ g_1(t) = \frac{\alpha}{m \omega_m} \frac{-2\omega_m(t-T)\cos\omega_m(t-\tau) + \sin\omega_m(t-\tau) + \sin\omega_m(t-2T+\tau)}{-2T\omega_m + \sin2\omega_m(T-\tau)+\sin2\omega_m\tau}
+\end{equation}
+So,we can get analytical equation for homodyne angle from Eq.\ref{g1},\ref{g2}:
+\begin{equation}\label{appx:zeta}
+ \zeta(t) = \arctan\frac{g_2(t)}{g_1(t)}
+\end{equation}
+
+Finally an error in estimation the force would be (see Eq.\ref{<Y>} and \ref{g2})
+\begin{equation}
+ \Delta F = \frac{2\omega_m\hbar^2}{\alpha^2} \frac{1}{2\omega_mT-\sin2\omega_m(T-\tau)-\sin2\omega_m\tau}
+\end{equation}

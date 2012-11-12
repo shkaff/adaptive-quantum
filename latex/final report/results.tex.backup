@@ -5,9 +5,9 @@
  \end{minipage}
 \hfill
  \begin{minipage}{0.5\linewidth}
-  \center{\includegraphics[width=1.\linewidth]{force_estimation}}
+  \center{\includegraphics[width=1.\linewidth]{T_a10_big}}
  \end{minipage}
-\caption{Homodyne angle $\zeta(t)$ dependence of time \textit{(left)} and estimation of delay time depending on time \textit{(right)} (one period).}
+\caption{Homodyne angle $\zeta(t)$ dependence of time \textit{(left)} and estimation of delay time depending on time \textit{(right)}.}
 \label{pic:hom}
 \end{figure}
 \begin{table}
@@ -22,8 +22,7 @@ Adaptive measurement & 51.122 & 0.022 & 0.9 & 0.0004 \\
 Fixed homodyne angle $\zeta = \pi/2$  & 51.035 & 0.064 & 0.9023 & 0.0023 \\
 \hline
  \end{tabular}}
-\caption{Comparison of precision of estimations: force and arrival time for the following parameters: arrival time $\tau = 0.9$,amplitude of the force
-$ F = 51.1$,measurement time $T=6.6$}
+\caption{$\tau = 0.9, F = 51.1, N = 1000,T=6.6$}
 \label{set1}
 \end{table}
 By the moment this project is still running, so there are some results, that we can present,but there are a lot of issues to be studied.
