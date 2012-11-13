@@ -22,6 +22,34 @@ from the right side or below. So, we add element in to ways:
 a = append(a, data, axis = 1) -- from the right
 a = append(a, data, 0) -- below
 """
+
+#--------------------------------------------------------------------------------
+# Define constants
+#--------------------------------------------------------------------------------
+procedure = 1 # we use variation method for innovation procedure
+
+a = 10.0 # coupling constant
+hbar = 1.0 # plank constant
+m = 1.0 # mass of the oscillator
+w = 1.0 # eigenfrequency of the oscillator
+
+# signal
+F = 50.1
+tau = 0.9
+A_c = 1/(m*w)*F*cos(w*tau)
+A_s = 1/(m*w)*F*sin(w*tau)
+
+initial_z = 0.9
+
+# time step
+dt = 0.003
+N = 100
+cycles = 1
+
+#--------------------------------------------------------------------------------
+# Define variables
+#--------------------------------------------------------------------------------
+
 #--------------------------------------------------------------------------------
 # Generate signal
 #--------------------------------------------------------------------------------
@@ -35,8 +63,8 @@ signal = F/(m*w)*sin(w*(t-tau)) = A_c*sin(w*t) - A_s*cos(w*t)
 back action = a*integral_0^t(G(t'-t)*a1(t'))
 """
 
-def y(i, z, a1, a2, A_c, A_s, F, stage):
-    return dot(D(i,z,tau,stage),x(A_c,A_s,F,stage))+noise(i,z,a1,a2)
+def y(i, z, a1, a2, A_c, A_s, F,BA, stage):
+    return dot(D(i,z,tau,stage),x(A_c,A_s,F,stage))+noise(i,z,a1,a2,BA)
 
 #--------------------------------------------------------------------------------
 # Define main functions
@@ -60,10 +88,9 @@ def x(A_c,A_s,F,stage): # define signal
     else:
         return F/(m*w)
 
-def noise(i,z,a1,a2): # define noise
+def noise(i,z,a1,a2,BA): # define noise
     return n1(a1,i)*cos(z[i])+ n2(a2,i,BA)*sin(z[i])
     
-
 #--------------------------------------------------------------------------------
 # Define secondary functions
 #--------------------------------------------------------------------------------
@@ -185,9 +212,9 @@ def estimation_LMMSE(invY,xy,y,stage):
 # Define innovation of homodyne angle
 #--------------------------------------------------------------------------------
 def variational(i,tau,T):
-    zeta_constants = (4*w**2*m*hbar)/a**2
+    zeta_constants = (4.0*w**2*m*hbar)/a**2
     zeta_numenator = sin(w*(dt*i-tau))
-    zeta_denumenator = 2*w*(dt*i-T)*cos(w*(dt*i-tau)) - sin(w*(dt*i-tau))-sin(w*(dt*i-2*T+tau))
+    zeta_denumenator = 2.0*w*(dt*i-T)*cos(w*(dt*i-tau)) - sin(w*(dt*i-tau))-sin(w*(dt*i-2*T+tau))
     return arctan(zeta_constants*zeta_numenator/zeta_denumenator)
     
 def adaptive(Ac, As, Ac_old, As_old):
@@ -199,40 +226,49 @@ def adaptive(Ac, As, Ac_old, As_old):
 #--------------------------------------------------------------------------------
 # Define estimation procedure
 #--------------------------------------------------------------------------------
-def back_action():
-    
+def back_action(N,dt):
+    a1 = array([[]])
+    a2 = array([[]])
     GG = zeros((N,N)) #back-action matrix
     for i in xrange(0,N):
         a1 = append(a1,[[gauss(0,sqrt(1.0/(2.0*dt)))]],1) # we use append(initial array, [[number]], axis)
         a2 = append(a2,[[gauss(0,sqrt(1.0/(2.0*dt)))]],1)
-        for j in xrange(0,i+1):
+        for j in xrange(0,i+1): #fill the grin function matrix
             if i>j:
                 GG[i][j] = G(dt*(i-j))
             else:
                 GG[i][j] = 0.0   
-    a1 = a1.T
-    a2 = a2.T
-    BA=dot(dot(GG,a1),dt)
+    a1 = a1.T #transpose
+    a2 = a2.T #transpose
+    BA=dot(dot(GG,a1),dt) #calculate back-action matrix
     return BA, a1, a2
-    
-def innovation_zeta(z,i,est_tau,Estimator,Estimator_old):
+
+#-------
+# Define innovation of the homodyne angle
+#-------
+def innovation_zeta(z,i,est_tau,Estimator,Estimator_old): 
     if procedure == 0: # no change
         z = append(z, [1.0])   
     if procedure == 1: # variation
-        z = append(z, [variation(dt*(i+1),est_tau,dt*N)])
+        z = append(z, [variational(i+1,est_tau,dt*N)])
     if procedure == 2: # filtering
         z = 0
     if procedure == 3: #adaptive
         z = append(z, [z[i-1]+ adaptive(Estimator[0],Estimator[1],Estimator_old[0],Estimator_old[1])])
-    
+    return z
+#-------
+# Print results of the estimation 
+#-------    
 def printout(est_F,est_tau,estimation_F,estimation_tau,z):
     print est_F, 'estimation F', F, 'F'
     print est_tau, 'estimation tau', tau, 'tau'
     figure(0)
     plot(estimation_F)
+    axhline(F)
     title(u'Estimation F')
     figure(1)
     plot(estimation_tau)
+    axhline(tau)
     title(u'Estimation tau')
     figure(2)
     plot(z)
