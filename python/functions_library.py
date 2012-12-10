@@ -9,6 +9,8 @@ from numpy import *
 from random import gauss
 from numpy.linalg import *
 from pylab import *
+import datetime
+import os
 """
 Matrices and arrays in python
 
@@ -42,8 +44,8 @@ A_s = 1/(m*w)*F*sin(w*tau)
 initial_z = 0.9
 
 # time step
-N = 1000
-dt = 0.0314
+N = 200
+dt = 0.01
 cycles = 1
 
 #--------------------------------------------------------------------------------
@@ -262,18 +264,37 @@ def innovation_zeta(z,i,est_tau,Estimator,Estimator_old):
 def printout(est_F,est_tau,estimation_F,estimation_tau,z,z_ideal):
     print est_F, 'estimation F', F, 'F'
     print est_tau, 'estimation tau', tau, 'tau'
+    datet = datetime.datetime.now()
+    fil = open('log.txt','a')
+    fil.write('------------------------------------------------------------\n')
+    fil.write('%s\n' % datet.strftime('%d-%m-%Y %H:%M'))
+    fil.write('------------------------------------------------------------\n')
+    fil.write('\t N=%s\n' % N)
+    fil.write('\t dt=%s\n' % dt)
+    fil.write('\t cycles=%s\n' % cycles)
+    fil.write('\t estimation F=%s\n' % est_F)
+    fil.write('\t F = %s\n' % F)
+    fil.write('\t estimation tau = %s\n' % est_tau)
+    fil.write('\t tau = %s\n' % tau)
+    fil.close()
+    
+    directoryname = str(datet.strftime('%d-%m-%Y_%H:%M'))
+    os.makedirs('images/%s' % directoryname)
     figure(0)
     plot(estimation_F)
-    axhline(F)
+    axhline(F, color = 'red')
     title(u'Estimation F')
+    savefig('images/%s/estF.png' % directoryname)
     figure(1)
     plot(estimation_tau)
-    axhline(tau)
+    axhline(tau, color = 'red')
     title(u'Estimation tau')
+    savefig('images/%s/est_tau.png' % directoryname)
     figure(2)
     plot(z)
     plot(z_ideal)
     title(u'Homodyne angle')
+    savefig('images/%s/z.png' % directoryname)
     show()
     
 def mean_value(statistics_F,statistics_tau):
@@ -289,7 +310,19 @@ def mean_value(statistics_F,statistics_tau):
     print F_mean, 'F_mean'
     print error_F, 'variation F'
     print error_tau, 'variation tau'
-    
+    datet = datetime.datetime.now()
+    fil = open('log.txt','a')
+    fil.write('------------------------------------------------------------\n')
+    fil.write('%s\n' % datet.strftime('%d-%m-%Y %H:%M'))
+    fil.write('------------------------------------------------------------\n')
+    fil.write('\t N=%s\n' % N)
+    fil.write('\t dt=%s\n' % dt)
+    fil.write('\t cycles=%s\n' % cycles)
+    fil.write('\t estimation F=%s\n' % est_F)
+    fil.write('\t error F = %s\n' % error_F)
+    fil.write('\t estimation tau = %s\n' % est_tau)
+    fil.write('\t error tau = %s\n' % error_tau)
+    fil.close()
     
     
     
