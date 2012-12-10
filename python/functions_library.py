@@ -28,7 +28,7 @@ a = append(a, data, 0) -- below
 #--------------------------------------------------------------------------------
 procedure = 1 # we use variation method for innovation procedure
 
-a = 10.0 # coupling constant
+a = 1.0 # coupling constant
 hbar = 1.0 # plank constant
 m = 1.0 # mass of the oscillator
 w = 1.0 # eigenfrequency of the oscillator
@@ -42,8 +42,8 @@ A_s = 1/(m*w)*F*sin(w*tau)
 initial_z = 0.9
 
 # time step
-dt = 0.003
-N = 100
+N = 1000
+dt = 0.0314
 cycles = 1
 
 #--------------------------------------------------------------------------------
@@ -195,7 +195,7 @@ def estimation_BLUE(invN,D,y,stage):
     
     if stage == 1:
         Estimator = dot(K,y)
-        return 1/w*arctan(Estimator[1]/Estimator[0]), 1/(m*w)*sqrt(Estimator[1]**2+Estimator[0]**2), Estimator
+        return abs(1/w*arctan(Estimator[1]/Estimator[0])), 1/(m*w)*sqrt(Estimator[1]**2+Estimator[0]**2), Estimator
     else:
         return arctan(K[0][-3]/K[0][-4]) # Here  K[-3] means that we take the element 3d from the end. K[-4] - 4th from the end.
 
@@ -214,8 +214,8 @@ def estimation_LMMSE(invY,xy,y,stage):
 def variational(i,tau,T):
     zeta_constants = (4.0*w**2*m*hbar)/a**2
     zeta_numenator = sin(w*(dt*i-tau))
-    zeta_denumenator = 2.0*w*(dt*i-T)*cos(w*(dt*i-tau)) - sin(w*(dt*i-tau))-sin(w*(dt*i-2*T+tau))
-    return arctan(zeta_constants*zeta_numenator/zeta_denumenator)
+    zeta_denumenator = 2.0*w*(T - dt*i)*cos(w*(dt*i-tau)) + sin(w*(dt*i-tau))- sin(w*(2*T-dt*i-tau))
+    return arctan(-zeta_constants*zeta_numenator/zeta_denumenator)
     
 def adaptive(Ac, As, Ac_old, As_old):
     innovation_value = innovation_constant*dt*(Ac*Ac_old+As*As_old - Ac_old**2 - As_old**2)
@@ -259,7 +259,7 @@ def innovation_zeta(z,i,est_tau,Estimator,Estimator_old):
 #-------
 # Print results of the estimation 
 #-------    
-def printout(est_F,est_tau,estimation_F,estimation_tau,z):
+def printout(est_F,est_tau,estimation_F,estimation_tau,z,z_ideal):
     print est_F, 'estimation F', F, 'F'
     print est_tau, 'estimation tau', tau, 'tau'
     figure(0)
@@ -272,6 +272,7 @@ def printout(est_F,est_tau,estimation_F,estimation_tau,z):
     title(u'Estimation tau')
     figure(2)
     plot(z)
+    plot(z_ideal)
     title(u'Homodyne angle')
     show()
     
@@ -279,12 +280,13 @@ def mean_value(statistics_F,statistics_tau):
     F_mean = 0
     tau_mean = 0
     for i in xrange(0,cycles):
-        F_mean += statistics_F[i]**2
-        tau_mean += statistics_tau[i]**2
+        F_mean += statistics_F[i]
+        tau_mean += statistics_tau[i]
     F_mean = F_mean/cycles
     tau_mean = tau_mean/cycles
-    error_F = F_mean-F**2
-    error_tau = tau_mean-tau**2
+    error_F = F_mean-F
+    error_tau = tau_mean-tau
+    print F_mean, 'F_mean'
     print error_F, 'variation F'
     print error_tau, 'variation tau'
     
